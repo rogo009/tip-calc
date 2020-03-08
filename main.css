@@ -22,7 +22,7 @@ p {
 }
 
 input {
-  padding: 8px 0;
+  padding: 8px;
   width: 200px;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -51,4 +51,7 @@ button {
 .display {
   display: block;
   border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+  color: red;
 }
