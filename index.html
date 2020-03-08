@@ -4,15 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Split the Bill</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1>Split the Bill</h1>
-    <p>Total Bill</p>
-    <input type="text" name="" id="" />
-    <p>Split Between</p>
-    <input type="text" name="" id="" />
-    <p>Tip</p>
-    <button>Calculate</button>
-    <div></div>
+    <div class="container">
+      <h2 id="h2">Split the Bill</h2>
+      <div>
+        <p>Total Cost</p>
+        <input type="text" name="" id="total" />
+        <p>Split Between</p>
+        <input type="text" name="" id="split" />
+        <p>Tip</p>
+        <!-- <label for="tip">Tip</label> -->
+        <select name="" id="tip">
+          <option>2%</option>
+          <option>10%</option>
+          <option>20%</option>
+        </select>
+        <button id="button">Calculate</button>
+        <div class="error"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

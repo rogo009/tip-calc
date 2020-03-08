@@ -1,1 +1,2 @@
-## this project calculates how much each person owes
+## this project calculates how much each person owes after tip
+## simple calculator

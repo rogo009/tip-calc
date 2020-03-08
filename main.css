@@ -1,0 +1,54 @@
+body {
+  font-family: "Lora", serif;
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+p {
+  margin: 1rem;
+}
+
+.container {
+  margin: 10% auto;
+  border: 1px solid palevioletred;
+  border-radius: 15px;
+  width: 80%;
+  height: auto;
+  padding: 30px;
+  text-align: center;
+  border-top: 50px solid pink;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+input {
+  padding: 8px 0;
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+select {
+  font-size: 0.9em;
+  border: 1px solid lightgray;
+  background-color: none;
+  width: 75px;
+  height: 30px;
+}
+
+button {
+  font-size: 0.9em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 0 20px;
+  background-color: pink;
+  cursor: pointer;
+  color: white;
+}
+
+.display {
+  display: block;
+  border: 1px solid black;
+}
