@@ -10,7 +10,7 @@ p {
 }
 
 .container {
-  margin: 10% auto;
+  margin: 5% auto;
   border: 1px solid palevioletred;
   border-radius: 15px;
   width: 80%;
@@ -27,6 +27,7 @@ input {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin: 5px;
+  font-size: .8em;
 }
 
 select {
@@ -50,8 +51,10 @@ button {
 
 .display {
   display: block;
-  border: 1px solid black;
-  margin: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 50px 0;
   padding: 20px;
   color: red;
+  background-color: pink;
 }

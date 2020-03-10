@@ -12,7 +12,10 @@ function change() {
 
 function isEmpty() {
     if(total.value === "" || split.value === "") {
-        error.textContent = "Please enter a number in both fields";
+        // error.textContent = "Please enter a number into both fields";
         error.classList.add('display');
+        setTimeout(function() {
+          error.classList.remove('display');
+        }, 3000);
     }
 }
