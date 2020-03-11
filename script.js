@@ -6,32 +6,40 @@ const error = document.getElementById("error");
 
 button.addEventListener("click", check);
 button.addEventListener("click", split);
-button.addEventListener('click', convert);
+button.addEventListener("click", convert);
 
 // function that displays error
 function display() {
-  error.classList.add('display');
+  error.classList.add("display");
   setTimeout(function() {
-    error.classList.remove('display');
+    error.classList.remove("display");
   }, 3000);
 }
 
+function convert() {
+  console.log(Math.round(split.value));
+}
+
 function check() {
-    if(total.value === "" || split.value === "" || total.value <= 0 || split.value <= 0) {
-        display();
-    }
-    if (isNaN(total.value)) {
-      display();
-    }
-    if (isNaN(split.value)) {
-      display();
-    }
+  if (
+    total.value === "" ||
+    split.value === "" ||
+    total.value <= 0 ||
+    split.value <= 0
+  ) {
+    display();
+  }
+  if (isNaN(total.value)) {
+    display();
+  }
+  if (isNaN(split.value)) {
+    display();
+  }
 }
 
 // function divide() {
 
 // }
-
 
 // function that divides total cost by # of people
 // function split() {
