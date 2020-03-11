@@ -4,18 +4,31 @@ const button = document.getElementById("button");
 const h2 = document.getElementById("h2");
 const error = document.getElementById("error");
 
-button.addEventListener("click", isEmpty);
+button.addEventListener("click", check);
+button.addEventListener("click", split);
 
-function change() {
-  console.log('yolo');
+// function that displays error
+function display() {
+  error.classList.add('display');
+  setTimeout(function() {
+    error.classList.remove('display');
+  }, 3000);
 }
 
-function isEmpty() {
-    if(total.value === "" || split.value === "") {
-        // error.textContent = "Please enter a number into both fields";
-        error.classList.add('display');
-        setTimeout(function() {
-          error.classList.remove('display');
-        }, 3000);
+function check() {
+    if(total.value === "" || split.value === "" || total.value <= 0 || split.value <= 0) {
+        display();
+    }
+    if (isNaN(total.value)) {
+      display();
+    }
+    if (isNaN(split.value)) {
+      display();
     }
 }
+
+
+// function that divides total cost by # of people
+// function split() {
+//   total.value / split.value;
+// }
