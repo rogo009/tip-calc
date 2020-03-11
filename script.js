@@ -6,6 +6,7 @@ const error = document.getElementById("error");
 
 button.addEventListener("click", check);
 button.addEventListener("click", split);
+button.addEventListener('click', convert);
 
 // function that displays error
 function display() {
@@ -13,6 +14,11 @@ function display() {
   setTimeout(function() {
     error.classList.remove('display');
   }, 3000);
+}
+
+// function to convert float to integer
+function convert() {
+  console.log(parseInt(split.value, 10));
 }
 
 function check() {
@@ -26,6 +32,10 @@ function check() {
       display();
     }
 }
+
+// function divide() {
+
+// }
 
 
 // function that divides total cost by # of people
