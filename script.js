@@ -16,11 +16,6 @@ function display() {
   }, 3000);
 }
 
-// function to convert float to integer
-function convert() {
-  console.log(parseInt(split.value, 10));
-}
-
 function check() {
     if(total.value === "" || split.value === "" || total.value <= 0 || split.value <= 0) {
         display();
