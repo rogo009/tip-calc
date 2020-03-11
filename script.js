@@ -4,11 +4,11 @@ const button = document.getElementById("button");
 const h2 = document.getElementById("h2");
 const error = document.getElementById("error");
 
+button.addEventListener("click", convert);
 button.addEventListener("click", check);
 button.addEventListener("click", split);
-button.addEventListener("click", convert);
 
-// function that displays error
+// function that displays error div
 function display() {
   error.classList.add("display");
   setTimeout(function() {
@@ -16,8 +16,10 @@ function display() {
   }, 3000);
 }
 
+// function that rounds the split input to nearest integer
 function convert() {
   console.log(Math.round(split.value));
+  // how to assign a new var name to the integer and pass it into the split function?
 }
 
 function check() {
@@ -36,10 +38,6 @@ function check() {
     display();
   }
 }
-
-// function divide() {
-
-// }
 
 // function that divides total cost by # of people
 // function split() {
