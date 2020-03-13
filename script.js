@@ -4,9 +4,10 @@ const button = document.getElementById("button");
 const h2 = document.getElementById("h2");
 const error = document.getElementById("error");
 
-button.addEventListener("click", convert);
+button.addEventListener("click", round);
 button.addEventListener("click", check);
 button.addEventListener("click", split);
+button.addEventListener("click", calc);
 
 // function that displays error div
 function display() {
@@ -17,7 +18,7 @@ function display() {
 }
 
 // function that rounds input to nearest integer (prevent user input 2.2 persons)
-function convert() {
+function round() {
   console.log(Math.round(split.value));
   // how to assign a new var name to the integer and pass it into the split function?
 }
@@ -39,7 +40,7 @@ function check() {
   }
 }
 
-//function that divides total cost by # of people
-function split() {
-
+//function that takes cost * tip % / # of people
+function calc() {
+  console.log(total.value / split.value);
 }
