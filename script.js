@@ -16,7 +16,7 @@ function display() {
   }, 3000);
 }
 
-// function that rounds the split input to nearest integer
+// function that rounds input to nearest integer (prevent user input 2.2 persons)
 function convert() {
   console.log(Math.round(split.value));
   // how to assign a new var name to the integer and pass it into the split function?
@@ -39,7 +39,7 @@ function check() {
   }
 }
 
-// function that divides total cost by # of people
-// function split() {
-//   total.value / split.value;
-// }
+//function that divides total cost by # of people
+function split() {
+
+}
