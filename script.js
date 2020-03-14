@@ -1,9 +1,12 @@
+// variables
 const total = document.getElementById("total");
 const split = document.getElementById("split");
+const customtip = document.getElementById("customtip");
 const button = document.getElementById("button");
 const h2 = document.getElementById("h2");
 const error = document.getElementById("error");
 
+// event listeners
 button.addEventListener("click", round);
 button.addEventListener("click", check);
 button.addEventListener("click", split);
@@ -42,5 +45,6 @@ function check() {
 
 //function that takes cost * tip % / # of people
 function calc() {
+  console.log(total.value * customtip.value)
   console.log(total.value / split.value);
 }
