@@ -38,7 +38,8 @@ function check() {
   }
 }
 
-//function that takes cost * tip % / # of people
+// grandtotal = cost * tip %
+// owed = grandtotal / # of people
 function calc() {
   let person = Number(Math.round(split.value));
   // console.log(total.value * tip.value)
@@ -46,29 +47,25 @@ function calc() {
   console.log(percentAmount + total);
   // console.log(totalAmout);
   console.log(total.value / person);
-}
 
 // function that rounds input to nearest integer (prevent user input 2.2 persons)
 // function round() {
 //   let person = Math.round(split.value);
 // }
 
-const calculateTip = function(billAmount, numUsers, selectedService) {
+// const calculateTip = function(billAmount, numUsers, selectedService) {
    
-  let percentTip = '';
-  if (selectedService === "1"){
-    percentTip = 0.2;
-  } else if (selectedService === "2"){
-    percentTip = 0.1;
-  } else {
-    percentTip = 0.02;
-  }
+//   let percentTip = '';
+//   if (selectedService === "1"){
+//     percentTip = 0.2;
+//   } else if (selectedService === "2"){
+//     percentTip = 0.1;
+//   } else {
+//     percentTip = 0.02;
+//   }
   
-  const tipAmount = Number(billAmount)*percentTip;
-  const totalAmount = Number(billAmount) + Number(tipAmount);
-  const eachPerson = Number(totalAmount) / Number(numUsers);
+//   const tipAmount = Number(billAmount)*percentTip;
+//   const totalAmount = Number(billAmount) + Number(tipAmount);
+//   const eachPerson = Number(totalAmount) / Number(numUsers);
   
-  return [tipAmount, totalAmount, eachPerson];
- 
-  
-};
+//   return [tipAmount, totalAmount, eachPerson];
