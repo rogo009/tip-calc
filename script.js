@@ -1,13 +1,14 @@
 // variables
 const total = document.getElementById("total");
 const split = document.getElementById("split");
-const customtip = document.getElementById("customtip");
+let tip;
+
 const button = document.getElementById("button");
-const h2 = document.getElementById("h2");
 const error = document.getElementById("error");
+// const h2 = document.getElementById("h2");
 
 // event listeners
-button.addEventListener("click", round);
+// button.addEventListener("click", round);
 button.addEventListener("click", check);
 button.addEventListener("click", split);
 button.addEventListener("click", calc);
@@ -18,12 +19,6 @@ function display() {
   setTimeout(function() {
     error.classList.remove("display");
   }, 3000);
-}
-
-// function that rounds input to nearest integer (prevent user input 2.2 persons)
-function round() {
-  console.log(Math.round(split.value));
-  // how to assign a new var name to the integer and pass it into the split function?
 }
 
 function check() {
@@ -45,6 +40,12 @@ function check() {
 
 //function that takes cost * tip % / # of people
 function calc() {
-  console.log(total.value * customtip.value)
-  console.log(total.value / split.value);
+  let person = Number(Math.round(split.value));
+  // console.log(total.value * tip.value)
+  console.log(total.value / person);
 }
+
+// function that rounds input to nearest integer (prevent user input 2.2 persons)
+// function round() {
+//   let person = Math.round(split.value);
+// }
