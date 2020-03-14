@@ -9,8 +9,8 @@ const error = document.getElementById("error");
 
 // event listeners
 // button.addEventListener("click", round);
+// button.addEventListener("click", split);
 button.addEventListener("click", check);
-button.addEventListener("click", split);
 button.addEventListener("click", calc);
 
 // function that displays error div
@@ -42,6 +42,9 @@ function check() {
 function calc() {
   let person = Number(Math.round(split.value));
   // console.log(total.value * tip.value)
+  let percentAmount = console.log(total.value * 0.2);
+  console.log(percentAmount + total);
+  // console.log(totalAmout);
   console.log(total.value / person);
 }
 
@@ -49,3 +52,23 @@ function calc() {
 // function round() {
 //   let person = Math.round(split.value);
 // }
+
+const calculateTip = function(billAmount, numUsers, selectedService) {
+   
+  let percentTip = '';
+  if (selectedService === "1"){
+    percentTip = 0.2;
+  } else if (selectedService === "2"){
+    percentTip = 0.1;
+  } else {
+    percentTip = 0.02;
+  }
+  
+  const tipAmount = Number(billAmount)*percentTip;
+  const totalAmount = Number(billAmount) + Number(tipAmount);
+  const eachPerson = Number(totalAmount) / Number(numUsers);
+  
+  return [tipAmount, totalAmount, eachPerson];
+ 
+  
+};
