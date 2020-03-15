@@ -42,11 +42,11 @@ function check() {
 // owed = grandtotal / # of people
 function calc() {
   let person = Number(Math.round(split.value));
-  // console.log(total.value * tip.value)
   let percentAmount = console.log(total.value * 0.2);
   console.log(percentAmount + total);
-  // console.log(totalAmout);
   console.log(total.value / person);
+
+}
 
 // function that rounds input to nearest integer (prevent user input 2.2 persons)
 // function round() {
@@ -68,4 +68,4 @@ function calc() {
 //   const totalAmount = Number(billAmount) + Number(tipAmount);
 //   const eachPerson = Number(totalAmount) / Number(numUsers);
   
-//   return [tipAmount, totalAmount, eachPerson];
+//   return [tipAmount, totalAmount, eachPerson]
